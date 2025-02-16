@@ -5,15 +5,12 @@
     Desenvolva um programa que contenha uma função que calcule o cubo desse número. Apresente o resultado para o usuário.
     */
 
- 
-    function inteiro() {
-        let numero = Number(prompt(`Informe um número inteiro:`));
-        let cubo = Math.pow(numero, 3);
-        document.write(`Resultado: ${cubo}`);
+    let numero = Number(prompt(`Informe um número inteiro:`));
+    function inteiro(cubo) {
+        return Math.pow(numero, 3);
+        
     }
-    inteiro();
-   
+    document.write(`Resultado: ${inteiro(numero)}`);
 
-  
-
+    // ok.
 </script>

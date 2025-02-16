@@ -1,0 +1,29 @@
+<script>
+    /*
+    Problema: Contar Vogais
+    Desenvolva um programa que contenha uma função que receba uma string e retorne a quantidade de vogais que a string possui.
+    Por exemplo, se o usuário informar a palavra "Araquari", o programa deverá retornar o valor 5, pois a palavra possui 5 vogais.
+    *Para simplificar, não considere vogais acentuadas.
+    */
+
+    //Entrada
+    let palavra = prompt(`Informe uma palavra:`).toLowerCase();
+
+    //Processamento
+    function contarVogais(v) {
+        let vogais = "aeiou";
+        let contador = 0;
+
+        for (let letra of v) {
+            if (vogais.includes(letra)) {
+                contador++;
+            }
+        }
+        return contador++;
+    }
+
+    //Saída 
+    document.write(`A palavra possui ${contarVogais(palavra)} vogais.`);
+
+    // ok.
+</script>

@@ -5,10 +5,10 @@
     F = (9 * C + 160) / 5
     */
 
-   function conversao() {
     let celsius = Number(prompt(`Informe a temperatura em celsius:`));
-    let fahrenheit = (9 * celsius + 160) / 5;
-    document.write(`A temperatura em Fahrenheit é: ${fahrenheit}°F`);
-   }
-   conversao();
+    function conversao(graus) {
+        return (9 * celsius + 160) / 5;
+
+    }
+    document.write(`A temperatura em Fahrenheit é: ${conversao(celsius)}°F`);
 </script>
